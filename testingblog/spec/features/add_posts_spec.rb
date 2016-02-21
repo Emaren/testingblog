@@ -3,15 +3,12 @@ RSpec.feature "adding posts" do
 
   scenario "allow a user to add a post" do
 
-    visit new_post_path
+    post = create(:post)
 
-    fill_in "Title", with: "My Title"
-    fill_in "Body", with: "My Body"
+    visit post_path(post)
 
-    click_on("Create Post")
-
-    expect(page).to have_content("My Title")
-    expect(page).to have_content("My Body")
+    expect(page).to have_content("My New Title")
+    expect(page).to have_content("My New Body")
 
   end
 

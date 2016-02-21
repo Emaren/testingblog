@@ -4,7 +4,7 @@ Install Rspec gem in,
     gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
   end
 
-Bundle
+bundle
 
 rails g rspec:install
 
@@ -35,3 +35,21 @@ Add view
 Add controller action
 
 Follow the errors to flesh out the CRUD.
+
+
+
+gem 'factory_girl_rails'
+
+bundle
+
+add to rails_helper.rb
+
+  config.include FactoryGirl::Syntax::Methods
+
+mkdir spec/factories
+
+touch spec/factories/post.rb
+
+Make factory in factories/post.rb
+
+Modify add_posts_spec.rb
