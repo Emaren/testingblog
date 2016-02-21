@@ -7,7 +7,7 @@ RSpec.describe Post, type: :model do
   end
 
   it "should have a matching body" do
-    expect(@post.body).to eq("Your Body")
+    expect(@post.body).to eq("My Body")
   end
 
 end
