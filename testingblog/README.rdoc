@@ -31,3 +31,7 @@ Add routes
 touch app/views/posts/new.html.erb
 
 Add view
+
+Add controller action
+
+Follow the errors to flesh out the CRUD.
