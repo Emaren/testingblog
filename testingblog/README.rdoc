@@ -13,3 +13,21 @@ rails g model post title body:text
 Add test to post_spec.rb
 
 rspec spec/model/post_spec.rb
+
+
+
+gem 'capybara'
+
+bundle
+
+mkdir spec/features
+
+touch spec/features/add_posts_spec.rb
+
+Add test to add_posts_spec.rb
+
+Add routes
+
+touch app/views/posts/new.html.erb
+
+Add view
