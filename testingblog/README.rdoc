@@ -1,0 +1,15 @@
+Install Rspec gem in,
+
+  group :development, :test do
+    gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+  end
+
+Bundle
+
+rails g rspec:install
+
+rails g model post title body:text
+
+Add test to post_spec.rb
+
+rspec spec/model/post_spec.rb
